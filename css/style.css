@@ -565,37 +565,37 @@
        
        @font-face {
            font-family: 'FontAwesome';
-           src: url('http://localhost:8080/fonts/FontAwesome.otf');
+           src: url('/fonts/FontAwesome.otf');
        }
        
        @font-face {
            font-family: 'Baloo-Regular';
-           src: url('http://localhost:8080/fonts/Baloo-Regular.ttf');
+           src: url('/fonts/Baloo-Regular.ttf');
        }
        
        @font-face {
            font-family: 'Yesteryear-Regular';
-           src: url('http://localhost:8080/fonts/Yesteryear-Regular.ttf');
+           src: url('/fonts/Yesteryear-Regular.ttf');
        }
        
        @font-face {
            font-family: 'FiraSans-Regular';
-           src: url('http://localhost:8080/fonts/FiraSans-Regular.otf');
+           src: url('/fonts/FiraSans-Regular.otf');
        }
        
        @font-face {
            font-family: 'FiraSans-Medium';
-           src: url('http://localhost:8080/fonts/FiraSans-Medium.otf');
+           src: url('/fonts/FiraSans-Medium.otf');
        }
        
        @font-face {
            font-family: 'FiraSans-Light';
-           src: url('http://localhost:8080/fonts/FiraSans-Light.otf');
+           src: url('/fonts/FiraSans-Light.otf');
        }
        
        @font-face {
            font-family: 'FiraSans-LightItalic';
-           src: url('http://localhost:8080/fonts/FiraSans-LightItalic.otf');
+           src: url('/fonts/FiraSans-LightItalic.otf');
        }
        
        .product_modal_row {
