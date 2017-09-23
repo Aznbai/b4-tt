@@ -1,0 +1,670 @@
+@background-color: #CAA77E;
+@text-color: #1A237E;
+@green: rgba(41, 255, 31, 1);
+@green-light: @yellow: rgba(253, 233, 0, 1);
+@yellow-light: rgba(255, 255, 145, 1);
+@grey-dark: rgba(50, 60, 67, 1);
+@grey: rgba(83, 91, 97, 1);
+@grey-light: rgba(214, 216, 217, 1);
+@ps-factor: 1.333;
+
+/*@navbar-height: 80px;*/
+
+@menu-size: 12px*@ps-factor;
+
+/*@motto-size: 38px*@ps-factor;*/
+
+@slogan-size: 60px*@ps-factor;
+@headline-size: 31px*@ps-factor;
+@second-headline-size: 14px*@ps-factor;
+@subline-size: 17px*@ps-factor;
+@second-subline-size: 11px*@ps-factor;
+@product-headline-size: 37px*@ps-factor;
+
+/*@product-headline-size:30px;*/
+
+@product-subline-size: 14px*@ps-factor;
+@product-price-size: 17px*@ps-factor;
+@product-subline-letter-spacing: 1.5px;
+@trainer-motto-size: 15px*@ps-factor;
+@trainer-headline-size: 18px*@ps-factor;
+@trainer-subline-size: 12px*@ps-factor;
+@trainer-text-size: 17px*@ps-factor;
+@trainer-text-color: @grey-light;
+@review-text-size: 11px*@ps-factor;
+@review-subline-size: 11px*@ps-factor;
+@partner-headline-size: 17px*@ps-factor;
+@contact-headline-size: 17px*@ps-factor;
+@contact-input-placeholder-size: 9px*@ps-factor;
+@newsletter-text-size: 14px*@ps-factor;
+@impressum-size: 12px*@ps-factor;
+@button-text-size: 10px*@ps-factor;
+@button-padding-size: 10px*@ps-factor;
+@button-letter-spacing: 1px*@ps-factor;
+
+/*general tag data*/
+
+body {
+    font-family: 'FiraSans-Light';
+}
+
+h1 {
+    font-size: @headline-size;
+}
+
+h3 {
+    font-size: @second-headline-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Baloo-Regular';
+}
+
+h2,
+h3,
+h4 {
+    margin-bottom: 0px;
+}
+
+section {
+    /*min-height: 200px;*/
+    /*padding: 50px 0 0px 0;*/
+    /*height: auto;*/
+    /*margin: 0 auto;*/
+    width: 100%;
+    position: relative;
+    /*background-size: 100%;*/
+}
+
+iframe {
+    margin: 0;
+}
+
+a {
+    color: rgba(41, 255, 31, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(41, 255, 31, 1);
+    text-decoration: none;
+}
+
+
+/*greenline z-index handling start*/
+
+#produkte,
+#trainer,
+#courts {
+    background-color: #FDE900;
+    font-size: 22px;
+    font-family: 'FiraSans-Light';
+}
+
+nav {
+    z-index: 1000000;
+}
+
+
+/*navbar breakpoint changes*/
+
+
+/*
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+
+        background-color: rgba(50, 60, 67, 1);
+        z-index: 99999;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 99999;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}*/
+
+
+/*greenline z-index handling end*/
+
+
+/*navbar*/
+
+.navbar-toggle {
+    margin-top: 24px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: @grey-dark;
+}
+
+.navbar {
+    background-color: @grey-dark;
+    font-size: @menu-size;
+    color: #949a9d;
+    margin: 0 0 0 0;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Baloo-Regular';
+    font-size: 14px;
+}
+
+.navbar-default {
+    /*height: @navbar-height;*/
+}
+
+.navbar-header {
+    padding-bottom: 0;
+    /*height: @navbar-height;*/
+}
+
+.navbar-nav,
+.navbar-collapse {
+    float: none!important;
+    position: relative;
+    z-index: 9999;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-brand {
+    height: 100%;
+}
+
+.img-brand {
+    margin-top: 6px;
+    height: 45px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-nav>li>a {
+    padding-top: 41px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #d6d8d9;
+    background-color: #747a7f;
+    border-bottom: 4px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: #fde900;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #949a9d;
+    background-color: #535b61;
+    border-bottom: 4px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: rgba(83, 91, 97, 1);
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    border-color: rgba(255, 255, 145, 1);
+    color: #949a9d;
+    background-color: #535b61;
+}
+
+.logo-main-wrap {
+    margin: 150px 0 150px 0;
+}
+
+.logo-motto {
+    z-index: 1;
+    line-height: 40px;
+    /*font-size: @motto-size;*/
+    font-family: 'Yesteryear-Regular';
+}
+
+.logo-slogan {
+    margin-top: 0;
+    z-index: 1;
+    font-size: @slogan-size;
+    font-family: 'Baloo-Regular';
+}
+
+.intro-text {
+    margin-bottom: 60px;
+}
+
+
+/*intro section*/
+
+#intro {
+    z-index: 1;
+    color: rgba(255, 255, 255, 1);
+}
+
+.second-headline {
+    margin-bottom: 15px;
+    font-size: @second-headline-size;
+}
+
+.first-subline {
+    font-size: @subline-size;
+}
+
+.second-subline {
+    font-size: @second-subline-size;
+}
+
+#intro i {
+    color: @green;
+    font-size: @second-headline-size*1.5;
+}
+
+
+/*products*/
+
+.test-polygon {
+    width: 100%;
+    height: 119px;
+    background-color: #FDE900;
+    -moz-clip-path: polygon(0 100%, 72% 0, 70% 52%, 100% 10%, 100% 100%);
+    -webkit-clip-path: polygon(0 100%, 72% 0, 70% 52%, 100% 10%, 100% 100%);
+    clip-path: polygon(0 100%, 72% 0, 70% 52%, 100% 10%, 100% 100%);
+}
+
+.product-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    margin: auto;
+    transition: background-color 0.5s ease;
+}
+
+.product-caption:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product-headline {
+    font-family: 'Baloo-Regular';
+    font-size: @product-headline-size;
+    line-height: @product-headline-size;
+    margin-bottom: 0px;
+}
+
+.product-subline {
+    font-family: 'FiraSans-LightItalic';
+    font-size: @product-subline-size;
+    letter-spacing: @product-subline-letter-spacing ;
+    line-height: @product-subline-size;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-family: 'FiraSans-Medium';
+    font-size: @product-price-size;
+    line-height: @product-price-size;
+    margin-bottom: 0px;
+}
+
+.product-users {
+    position: absolute;
+    padding-right: 20px;
+    bottom: 0;
+    right: 0;
+}
+
+.product-thumb {
+    overflow: hidden;
+    margin: 0 0 30px 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+.product-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product-thumb-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product-wrap {
+    position: relative;
+}
+
+
+/*trainers*/
+
+.img-trainer {
+    height: 160px;
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.trainer-motto {
+    font-family: 'FiraSans-LightItalic';
+    font-size: @trainer-motto-size;
+}
+
+.trainer-headline {
+    font-family: 'Baloo-Regular';
+    font-size: @trainer-headline-size;
+    line-height: @trainer-headline-size;
+    margin-bottom: 0px;
+}
+
+.trainer-subline {
+    font-size: @trainer-subline-size;
+    font-family: 'FiraSans-LightItalic';
+}
+
+.trainer-text {
+    font-size: @trainer-text-size;
+    font-family: 'FiraSans-Light';
+}
+
+
+/*courts*/
+
+#courts {
+    padding-top: 60px;
+    padding-bottom: 8px;
+}
+
+
+/* Map */
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+#gmap-one {
+    pointer-events: none;
+    height: 400px;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/*client review*/
+
+.review-text {
+    font-size: @review-text-size;
+    font-family: 'FiraSans-Light';
+}
+
+.review-subline {
+    font-size: @review-subline-size;
+    font-family: 'FiraSans-Light';
+}
+
+.carousel-control:hover {
+    color: @green;
+}
+
+.client-response-img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*partner*/
+
+#partner {
+    background-color: #d6d8d9;
+    color: #323c43;
+    font-size: 22px;
+    font-family: 'FiraSans-Light';
+}
+
+.partner-headline {
+    font-size: @partner-headline-size;
+    font-family: 'FiraSans-Light';
+}
+
+
+/*contact*/
+
+#kontakt {
+    background-color: #323c43;
+    color: #d6d8d9;
+    font-size: 22px;
+    font-family: 'FiraSans-Light';
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+    font-size: @contact-input-placeholder-size;
+    font-family: 'FiraSans-LightItalic';
+}
+
+input::-moz-placeholder,
+input:-moz-placeholder,
+textarea::-moz-placeholder,
+textarea:-moz-placeholder {
+    font-size: @contact-input-placeholder-size;
+    font-family: 'FiraSans-LightItalic';
+    opacity: 1;
+}
+
+.input-group-addon {
+    font-family: 'FiraSans-Regular';
+    font-size: @button-text-size;
+    letter-spacing: @button-letter-spacing;
+    color: @grey-light;
+    background-color: @grey;
+    border: 0;
+}
+
+.form-control {
+    background-color: @grey-light;
+}
+
+.form-group {
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+.contact-headline {
+    font-size: @contact-headline-size;
+    font-family: 'FiraSans-Light';
+}
+
+.newsletter-text {
+    font-size: @newsletter-text-size;
+    font-family: 'Baloo-Regular';
+    line-height: 24px;
+}
+
+#submit-message {
+    margin-top: 0;
+}
+
+.impressum-text {
+    font-size: @impressum-size;
+    font-family: 'FiraSans-Light';
+}
+
+.nachricht {
+    min-height: 100px;
+}
+
+.social-icon {
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: background-color 0.5s ease;
+}
+
+.social-icon:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer {
+    margin-top: 70px;
+    font-size: 16px;
+}
+
+
+/*general alterations*/
+
+.toffset {
+    margin-top: 40px;
+}
+
+.boffset {
+    margin-bottom: 30px;
+}
+
+.btn-default {
+    font-family: 'FiraSans-Regular';
+    font-size: @button-text-size;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: @button-letter-spacing;
+    line-height: 10px;
+    color: #333;
+    background-color: rgba(41, 255, 31, 1);
+    border: 0;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: rgba(135, 255, 130, 1);
+    border: 0;
+}
+
+.scroll-up {
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-size: 30px;
+    color: @green;
+}
+
+
+/*modals*/
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.modal-dialog {
+    width: 94%;
+    height: 90%;
+    padding: 0;
+}
+
+.modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    background-color: #323c43;
+    color: #d6d8d9;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control i,
+.carousel-control i {
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+}
+
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4,
+.modal h5,
+.modal h6 {
+    color: rgba(41, 255, 31, 1);
+}
+
+
+/*fonts*/
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/FontAwesome.otf');
+}
+
+@font-face {
+    font-family: 'Baloo-Regular';
+    src: url('../fonts/Baloo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Yesteryear-Regular';
+    src: url('../fonts/Yesteryear-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'FiraSans-Regular';
+    src: url('../fonts/FiraSans-Regular.otf');
+}
+
+@font-face {
+    font-family: 'FiraSans-Medium';
+    src: url('../fonts/FiraSans-Medium.otf');
+}
+
+@font-face {
+    font-family: 'FiraSans-Light';
+    src: url('../fonts/FiraSans-Light.otf');
+}
+
+@font-face {
+    font-family: 'FiraSans-LightItalic';
+    src: url('../fonts/FiraSans-LightItalic.otf');
+}

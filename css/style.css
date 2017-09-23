@@ -1,0 +1,690 @@
+       @green-light : @yellow: rgba(253, 233, 0, 1);
+       /*@navbar-height: 80px;*/
+       /*@motto-size: 38px*@ps-factor;*/
+       /*@product-headline-size:30px;*/
+       /*general tag data*/
+       
+       body {
+           font-family: 'FiraSans-Light';
+           position: relative;
+           overflow-y: auto;
+           /*padding-top: 2rem;*/
+           /* padding for fixed navbar */
+       }
+       
+       p {
+           margin-top: 0;
+           margin-bottom: 2rem;
+       }
+       
+       h1 {
+           font-size: 3rem;
+           /*padding-bottom: 30px;*/
+       }
+       
+       h3 {
+           font-size: 1rem;
+       }
+       
+       h1,
+       h2,
+       h3,
+       h4,
+       h5,
+       h6 {
+           font-family: 'Baloo-Regular';
+       }
+       
+       h2,
+       h3,
+       h4 {
+           margin-bottom: 0px;
+       }
+       
+       section {
+           /*min-height: 200px;*/
+           /*padding: 50px 0 0px 0;*/
+           /*height: auto;*/
+           /*margin: 0 auto;*/
+           width: 100%;
+           position: relative;
+           padding-top: 6rem;
+           /*background-size: 100%;*/
+       }
+       
+       iframe {
+           margin: 0;
+       }
+       
+       a {
+           color: #29ff1f;
+           text-decoration: none;
+       }
+       
+       a:hover {
+           color: #29ff1f;
+           text-decoration: none;
+       }
+       /*greenline z-index handling start*/
+       
+       .content-body {
+           /*padding-top: 2rem;*/
+       }
+       
+       #produkte,
+       #trainer,
+       #courts {
+           background-color: #FDE900;
+           font-size: 2rem;
+           font-family: 'FiraSans-Light';
+       }
+       /*navbar new*/
+       
+       .nav-item {
+           height: 100%;
+       }
+       
+       .nav-item>a {
+           /*     padding-right: 5px;
+     padding-left: 5px;*/
+           height: 100%;
+       }
+       /*navbar new end*/
+       
+       .img-brand {
+           height: 3rem;
+       }
+       
+       .navbar-toggler {
+           background-color: #949a9d;
+       }
+       
+       .navbar {
+           background-color: #323c43;
+           color: #949a9d;
+           padding-top: 0;
+           padding-bottom: 0;
+           margin: 0 0 0 0;
+           border: 0;
+           border-radius: 0;
+           font-family: 'Baloo-Regular';
+           /*font-size: 16px;*/
+       }
+       
+       .navbar-nav a {
+           padding-top: 3rem;
+           padding-bottom: 2rem;
+           /*          padding-left: 10px;
+          padding-right: 10px;*/
+           border-bottom: 4px;
+           border-top: 0;
+           border-left: 0;
+           border-right: 0;
+           border-style: solid;
+           color: #949a9d;
+           border-color: #323c43;
+           background-color: #323c43;
+       }
+       /* .navbar-nav {
+     padding-left: 10px;
+     padding-right: 10px;
+ }*/
+       
+       .navbar-nav .active {
+           color: #d6d8d9;
+           background-color: #747a7f;
+           border-color: #fde900;
+       }
+       
+       .navbar-nav .active:hover {
+           color: #949a9d;
+           background-color: #535b61;
+           border-color: #fde900;
+       }
+       
+       .navbar-nav a:hover {
+           /*color: #949a9d;*/
+           color: #dddddd;
+           background-color: #535b61;
+           border-color: #535b61;
+       }
+       /*navbar*/
+       
+       .logo-main-wrap {
+           margin: 220px 0 150px 0;
+       }
+       
+       .logo-motto {
+           z-index: 1;
+           line-height: 3rem;
+           font-size: 3rem;
+           /*font-size: @motto-size;*/
+           font-family: 'Yesteryear-Regular';
+       }
+       
+       .logo-slogan {
+           margin-top: 0;
+           z-index: 1;
+           font-size: 4rem;
+           line-height: 5rem;
+           font-family: 'Baloo-Regular';
+       }
+       
+       .intro-text {
+           margin-bottom: 3rem;
+       }
+       /*intro section*/
+       
+       #intro {
+           z-index: 1;
+           color: #ffffff;
+       }
+       
+       .second-headline {
+           margin-bottom: 15px;
+           font-size: 1rem;
+       }
+       
+       .first-subline {
+           font-size: 1rem;
+       }
+       
+       .second-subline {
+           font-size: 1rem;
+       }
+       
+       #intro i {
+           color: #29ff1f;
+           font-size: 2rem;
+       }
+       /*products*/
+       
+       .carousel-control-next,
+       .carousel-control-prev {
+           color: #323232;
+       }
+       
+       .carousel-control-next:focus,
+       .carousel-control-next:hover,
+       .carousel-control-prev:focus,
+       .carousel-control-prev:hover {
+           color: #323232;
+       }
+       
+       .test-polygon {
+           width: 100%;
+           height: 119px;
+           background-color: #FDE900;
+           -moz-clip-path: polygon(0 100%, 72% 0, 70% 52%, 100% 10%, 100% 100%);
+           -webkit-clip-path: polygon(0 100%, 72% 0, 70% 52%, 100% 10%, 100% 100%);
+           clip-path: polygon(0 100%, 72% 0, 70% 52%, 100% 10%, 100% 100%);
+       }
+       
+       .product-card {
+           color: #ffffff;
+           background-color: #FDE900;
+           border: 0px;
+           margin-bottom: 2rem;
+       }
+       
+       .card-body {
+           padding: 0;
+       }
+       
+       .product-caption {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           padding-left: 20px;
+           padding-right: 20px;
+           padding-top: 55px;
+           padding-bottom: 20px;
+           margin: auto;
+           transition: background-color 0.5s ease;
+       }
+       
+       .product-caption:hover {
+           background-color: rgba(0, 0, 0, 0.5);
+       }
+       
+       .product-headline {
+           font-family: 'Baloo-Regular';
+           font-size: 2rem;
+           line-height: 2.3rem;
+           margin-bottom: 0px;
+       }
+       
+       .product-subline {
+           font-family: 'FiraSans-LightItalic';
+           font-size: 1rem;
+           letter-spacing: 1.5px;
+           line-height: 18.662px;
+           margin-bottom: 10px;
+       }
+       
+       .product-price {
+           font-family: 'FiraSans-Medium';
+           font-size: 2rem;
+           line-height: 22.661px;
+           margin-bottom: 0px;
+       }
+       
+       .product-users {
+           font-size: 16px;
+           position: absolute;
+           padding-right: 10px;
+           margin-bottom: 10px;
+           bottom: 0;
+           right: 0;
+       }
+       
+       .product-overlay {
+           background-color: rgba(0, 0, 0, 0.5);
+       }
+       
+       .product-thumb-overlay {
+           height: 100%;
+           width: 100%;
+           background-color: rgba(0, 0, 0, 0.5);
+       }
+       
+       .product-wrap {
+           height: 210px;
+           position: relative;
+           overflow: hidden;
+           margin: 0 0 30px 0;
+           color: #ffffff;
+       }
+       /*trainers*/
+       
+       .img-trainer {
+           height: 160px;
+           width: 160px;
+           margin-bottom: 20px;
+       }
+       
+       .trainer-motto {
+           font-family: 'FiraSans-LightItalic';
+           font-size: 2rem;
+       }
+       
+       .trainer-headline {
+           font-family: 'Baloo-Regular';
+           font-size: 2rem;
+           line-height: 2rem;
+           margin-bottom: 0px;
+       }
+       
+       .trainer-subline {
+           font-size: 1rem;
+           font-family: 'FiraSans-LightItalic';
+       }
+       
+       .trainer-text {
+           font-size: 2rem;
+           font-family: 'FiraSans-Light';
+       }
+       /*courts*/
+       /*   #courts {
+       padding-top: 60px;
+       padding-bottom: 8px;
+   }*/
+       /* Map */
+       
+       @media (max-width: 768px) {
+           .map {
+               height: 75%;
+           }
+       }
+       
+       #gmap-one {
+           pointer-events: none;
+           height: 400px;
+           width: 100%;
+           z-index: 100;
+       }
+       /*client review*/
+       
+       .review-text {
+           font-size: 1rem;
+           font-family: 'FiraSans-Light';
+       }
+       
+       .review-subline {
+           font-size: 1rem;
+           font-family: 'FiraSans-Light';
+       }
+       /*.carousel-control:hover {
+    color: #29ff1f;
+}*/
+       
+       .client-response-img {
+           padding-left: 1rem;
+           padding-right: 1rem;
+       }
+       /*partner*/
+       
+       #partner {
+           background-color: #d6d8d9;
+           color: #323c43;
+           font-family: 'FiraSans-Light';
+       }
+       
+       .partner-headline {
+           font-size: 2rem;
+           font-family: 'FiraSans-Light';
+       }
+       /*contact*/
+       
+       #kontakt {
+           background-color: #323c43;
+           color: #d6d8d9;
+           font-size: 2rem;
+           font-family: 'FiraSans-Light';
+       }
+       
+       textarea::-webkit-input-placeholder,
+       input::-webkit-input-placeholder {
+           font-size: 1rem;
+           font-family: 'FiraSans-LightItalic';
+       }
+       
+       input::-moz-placeholder,
+       input:-moz-placeholder,
+       textarea::-moz-placeholder,
+       textarea:-moz-placeholder {
+           font-size: 1rem;
+           font-family: 'FiraSans-LightItalic';
+           opacity: 1;
+       }
+       
+       .input-group-addon {
+           font-family: 'FiraSans-Regular';
+           font-size: 1rem;
+           letter-spacing: 1.333px;
+           color: #d6d8d9;
+           background-color: #535b61;
+           border: 0;
+       }
+       
+       .form-control {
+           background-color: #d6d8d9;
+       }
+       
+       .form-group {
+           margin-bottom: 4px;
+           width: 100%;
+       }
+       
+       .section-subline {
+           font-size: 1.5rem;
+           line-height: 2rem;
+           font-family: 'FiraSans-Light';
+       }
+       
+       .contact-headline {
+           font-size: 1.8rem;
+           line-height: 2rem;
+           font-family: 'FiraSans-Light';
+       }
+       
+       .newsletter-text {
+           padding-top: 2rem;
+           padding-bottom: 1rem;
+           padding-left: 1rem;
+           padding-right: 1rem;
+           font-size: 1.2rem;
+           font-family: 'Baloo-Regular';
+       }
+       
+       #submit-message {
+           margin-top: 0;
+       }
+       
+       .impressum-text {
+           font-size: 1rem;
+           font-family: 'FiraSans-Light';
+       }
+       
+       .nachricht {
+           min-height: 100px;
+       }
+       
+       .social-icon {
+           padding-right: 15px;
+           padding-left: 15px;
+           transition: background-color 0.5s ease;
+       }
+       
+       .social-icon:hover {
+           color: #ffffff;
+       }
+       
+       .footer {
+           margin-top: 2rem;
+           font-size: 1rem;
+       }
+       /*general alterations*/
+       
+       .toffset {
+           padding-top: 2rem;
+       }
+       
+       .boffset {
+           padding-bottom: 2rem;
+       }
+       
+       .btn-default {
+           font-family: 'FiraSans-Regular';
+           font-size: 1rem;
+           padding-left: 15px;
+           padding-right: 15px;
+           padding-top: 15px;
+           padding-bottom: 15px;
+           letter-spacing: 1.333px;
+           line-height: 10px;
+           color: #333;
+           background-color: #29ff1f;
+           border: 0;
+       }
+       
+       .btn-default:hover {
+           color: #333;
+           background-color: #87ff82;
+           border: 0;
+       }
+       
+       .scroll-up {
+           border-radius: 50%;
+           position: fixed;
+           right: 50px;
+           bottom: 50px;
+           font-size: 3rem;
+           color: #29ff1f;
+       }
+       /*modals*/
+       
+       .vertical-align {
+           display: flex;
+           align-items: center;
+       }
+       
+       .test-col {
+           height: 100%;
+       }
+       
+       .product_modal_nav {
+           /*padding-top: 3rem;*/
+           position: bottom: 0;
+       }
+       
+       .modal-product-selector {
+           font-size: 0.6rem;
+       }
+       
+       .modal-product-column {
+           min-height: 100%;
+       }
+       
+       .modal-dialog {
+           max-width: 94%;
+           height: 90%;
+           padding: 0;
+       }
+       
+       .modal-content {
+           height: auto;
+           min-height: 100%;
+           border-radius: 0;
+           background-color: #323c43;
+           color: #d6d8d9;
+       }
+       /*.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control i,
+.carousel-control i {
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+}*/
+       
+       .modal h1,
+       .modal h2,
+       .modal h3,
+       .modal h4,
+       .modal h5,
+       .modal h6 {
+           color: #29ff1f;
+       }
+       /*fonts*/
+       
+       @font-face {
+           font-family: 'FontAwesome';
+           src: url('http://localhost:8080/fonts/FontAwesome.otf');
+       }
+       
+       @font-face {
+           font-family: 'Baloo-Regular';
+           src: url('http://localhost:8080/fonts/Baloo-Regular.ttf');
+       }
+       
+       @font-face {
+           font-family: 'Yesteryear-Regular';
+           src: url('http://localhost:8080/fonts/Yesteryear-Regular.ttf');
+       }
+       
+       @font-face {
+           font-family: 'FiraSans-Regular';
+           src: url('http://localhost:8080/fonts/FiraSans-Regular.otf');
+       }
+       
+       @font-face {
+           font-family: 'FiraSans-Medium';
+           src: url('http://localhost:8080/fonts/FiraSans-Medium.otf');
+       }
+       
+       @font-face {
+           font-family: 'FiraSans-Light';
+           src: url('http://localhost:8080/fonts/FiraSans-Light.otf');
+       }
+       
+       @font-face {
+           font-family: 'FiraSans-LightItalic';
+           src: url('http://localhost:8080/fonts/FiraSans-LightItalic.otf');
+       }
+       
+       .product_modal_row {
+           padding-left: 50px;
+       }
+       
+       ul.products_list {
+           padding-left: 20px;
+           color: rgba(41, 255, 31, 1);
+       }
+       
+       .products_list > li {
+           margin-left: 0px;
+           padding-left: 0px;
+       }
+       
+       .list_item_style {
+           margin-left: 0px;
+           padding-left: 0px;
+       }
+       
+       li.margin {
+           margin-left: 10px;
+       }
+       
+       li.padding {
+           padding-left: 10px;
+       }
+       
+       li.personen,
+       li.skills,
+       li.tempo,
+       li.preis,
+       li.training {
+           display: block;
+       }
+       
+       li.personen:before,
+       li.skills:before,
+       li.tempo:before,
+       li.preis:before,
+       li.training:before {
+           font-family: 'Glyphicons Halflings';
+           font-size: 1rem;
+           margin-top: 4px;
+           margin-left: -17px;
+           height: 100%;
+           display: block;
+           float: left;
+       }
+       
+       li.personen:before {
+           content: "\e102";
+       }
+       
+       li.skills:before {
+           content: "\e003";
+       }
+       
+       li.tempo:before {
+           content: "\e006";
+       }
+       
+       li.preis:before {
+           content: "\e171";
+       }
+       
+       li.training:before {
+           content: "\e162";
+       }
+       
+       .list_item_style {
+           padding-left: 20px;
+           display: block;
+       }
+       
+       .product_modal_pic {
+           padding-top: 2rem;
+           padding-right: 0px;
+           margin-right: 0px;
+           /*right: -15px;*/
+       }
+       
+       .product_modal_pic_subline {
+           padding-left: 15px;
+       }
+       
+       .product_modal_nav_wrap {
+           position: absolute;
+           width: 100%;
+           min-height: 100%;
+       }
