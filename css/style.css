@@ -303,6 +303,16 @@
            height: 160px;
            width: 160px;
            margin-bottom: 20px;
+           transition: filter 0.5s ease;
+       }
+       
+       .img-trainer:hover {
+           filter: brightness(50%);
+           transition: filter 0.5s ease;
+       }
+       
+       .trainer-section-headline {
+           margin-bottom: 0px;
        }
        
        .trainer-motto {
@@ -540,6 +550,11 @@
            border-radius: 0;
            background-color: #323c43;
            color: #d6d8d9;
+       }
+       
+       .cutout-pic-wrap {
+           overflow: hidden;
+           max-height: 50%;
        }
        /*.carousel-control.left,
 .carousel-control.right {
