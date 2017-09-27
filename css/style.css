@@ -393,6 +393,11 @@
            font-size: 2rem;
            font-family: 'FiraSans-Light';
        }
+       /*kundenstimmen*/
+       
+       #kundenstimmen {
+           padding-top: 0px;
+       }
        /*contact*/
        
        #kontakt {
@@ -400,6 +405,17 @@
            color: #d6d8d9;
            font-size: 2rem;
            font-family: 'FiraSans-Light';
+       }
+       
+       #client-review-carousel {
+           padding-top: 8rem;
+       }
+       
+       #kontakt .fa {
+           padding-left: 1.5rem;
+           padding-right: 1.5rem;
+           font-size: 2rem;
+           line-height: 4.5rem;
        }
        
        textarea::-webkit-input-placeholder,
